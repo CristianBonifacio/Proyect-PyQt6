@@ -11,7 +11,7 @@ class conexion:
             'UID=admin;'
             'PWD=password'
         )
-    
+
 
     def consulta_tofecha(self,startDate, endDate):
         self.cursor = self.conexion.cursor()
@@ -34,6 +34,9 @@ class conexion:
         #obtener los nombres de las columnas
         nombres_columnas = [i[0] for i in self.cursor.description]
         resultados =self.cursor.fetchall()
+        resultados = [tuple(row) for row in resultados]
+        print(resultados)
+        print(nombres_columnas)
         # Cerrar el cursor y la conexion
         self.cursor.close()
         return resultados,nombres_columnas
@@ -58,6 +61,7 @@ class conexion:
         #obtener los nombres de las columnas
         nombres_columnas = [i[0] for i in self.cursor.description]
         resultados =self.cursor.fetchall()
+        
         # Cerrar el cursor y la conexion
         self.cursor.close()
         return resultados,nombres_columnas

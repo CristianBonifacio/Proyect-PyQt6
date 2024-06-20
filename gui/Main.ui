@@ -193,6 +193,32 @@
     <string>Buscar</string>
    </property>
   </widget>
+  <widget class="QToolButton" name="ExportReport">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>561</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exportar Reporte</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="ExportarAudio">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>560</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exportar Grabaciones</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
