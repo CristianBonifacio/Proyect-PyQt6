@@ -9,8 +9,8 @@ class convert:
     def execute(self):
         for number in self.data:
 
-            input_file = f"C:\\Verint Original\\{number}.wav"
-            output_file = f"C:\\Verint New\\{number}.wav"
+            input_file = f"D:\\audios\\Verint Original\\{number}.wav"
+            output_file = f"D:\\audios\\Verint New\\{number}.wav"
             command = [
                 "C:\\Program Files (x86)\\Verint\\Playback\\CommandLineConvertor.exe",
                 input_file,
